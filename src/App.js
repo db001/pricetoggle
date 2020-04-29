@@ -1,6 +1,8 @@
 import React from 'react';
 import CardContainer from './components/CardContainer';
-import Toggle from './components/Toggle'
+import Toggle from './components/Toggle';
+
+import './App.css';
 
 class App extends React.Component {
   constructor() {
@@ -19,6 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <h1>Our Pricing</h1>
         <Toggle changePaymentType={this.changePaymentType} />
         <CardContainer monthly={this.state.monthly} />
       </div>
