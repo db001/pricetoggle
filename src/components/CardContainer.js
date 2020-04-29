@@ -3,11 +3,11 @@ import Card from './Card';
 import data from '../data/data.js';
 
 export class CardContainer extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            monthly: true
-        };
+            monthly: this.props.monthly
+        }
     }
 
     setDataToState = () => {
@@ -30,7 +30,7 @@ export class CardContainer extends Component {
                         return (<Card
                             key={i}
                             name={card.name}
-                            price={this.state.monthly ? card.monthlyPrice : card.annualPrice}
+                            price={this.props.monthly ? card.monthlyPrice : card.annualPrice}
                             storage={card.storage}
                             maxUsers={card.maxUsers}
                             sendLimit={card.sendLimit}

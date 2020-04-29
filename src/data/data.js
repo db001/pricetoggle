@@ -1,7 +1,7 @@
 export default {
     cards: [
         {
-            name: "basic",
+            name: "Basic",
             monthlyPrice: "19.99",
             annualPrice: "199.99",
             storage: "500 GB",
@@ -10,7 +10,7 @@ export default {
             promoted: false
         },
         {
-            name: "professional",
+            name: "Professional",
             monthlyPrice: "24.99",
             annualPrice: "249.99",
             storage: "1 TB",

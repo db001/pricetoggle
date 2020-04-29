@@ -3,11 +3,9 @@ import Price from './Price';
 import Button from './Button'
 
 function Card(props) {
-    console.log(props)
-
     const promotedClass = props.promoted ? "promoted" : ""
     return (
-        <li className={promotedClass}>
+        <li className={`card ${promotedClass}`}>
             <h4>{props.name}</h4>
             <Price price={props.price} />
             <ul>
